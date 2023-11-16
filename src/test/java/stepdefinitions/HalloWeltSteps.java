@@ -41,6 +41,7 @@ public class HalloWeltSteps {
         page.fill("input#txtSearch", search_term);
         page.keyboard().press("Enter");
     }
+
     @Then("sollte der Artikelheader {string} angezeigt werden")
     public void sollte_der_artikelheader_angezeigt_werden(String string) {
         String article_heading = page.textContent("#firstHeading");

@@ -6,7 +6,7 @@ import org.junit.Test;
 public class PlayWrightTests {
 
     @Test
-    public void setup(){
+    public void startBrowser(){
         Playwright pw = Playwright.create();
         Browser browser = pw.chromium().launch(
                 new BrowserType.LaunchOptions().setHeadless(false)

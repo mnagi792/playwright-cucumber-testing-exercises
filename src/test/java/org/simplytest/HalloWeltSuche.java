@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class HalloWeltSuche {
 
     @Test
-    public void shouldSearchHelloWorld() {
+    public void searchHelloWorld() {
         Playwright playwright = Playwright.create();
         Browser browser = playwright.firefox().launch(
                 new BrowserType.LaunchOptions() .setHeadless(false) .setSlowMo(2000)
@@ -34,5 +34,6 @@ public class HalloWeltSuche {
 
         String article_heading = page.textContent("#firstHeading");
         assertEquals(search_term, article_heading);
-        playwright.close(); }
+        playwright.close();
+    }
 }

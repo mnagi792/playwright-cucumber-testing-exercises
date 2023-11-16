@@ -18,7 +18,6 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginWithDataTableSteps{
 
-
     private Playwright playwright;
     private Page page;
     private Browser browser;
@@ -62,4 +61,3 @@ public class LoginWithDataTableSteps{
     }
 
 }
-
