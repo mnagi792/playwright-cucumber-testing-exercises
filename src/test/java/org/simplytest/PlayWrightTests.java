@@ -25,7 +25,8 @@ public class PlayWrightTests {
         );
 
         // Browser in isolierter Session starten
-        // um sicher zu stellen, das jeder Test einen eignen Context hat (Cookies, Sessions, Cache usw..)
+        // um sicher zu stellen, das jeder Test einen eignen
+        // Context hat (Cookies, Sessions, Cache usw..)
         BrowserContext browserContext = browser.newContext();
         Page page = browserContext.newPage();
     }
